@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="~/css/site.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="~/css/footer-distributed-with-address-and-phones.css">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -30,10 +31,10 @@
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/logo.png" width="200" /></a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About"><span class="menu-items">About</span></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact"><span class="menu-items">Contact</span></a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -42,10 +43,47 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2017 - mvcdemo</p>
-        </footer>
+        
     </div>
+    <!--Footer-->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>MVCDEMO</h3>
+            <p class="footer-links">
+                <a asp-action="About">About</a>
+                ·
+                <a asp-action="Contact">Contact</a>
+            </p>
+            <p class="footer-company-name">mvcdemo &copy; 2017</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Plaza Sentral</span> Kuala Lumpur, MY</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+60123456789</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--/.Footer-->
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

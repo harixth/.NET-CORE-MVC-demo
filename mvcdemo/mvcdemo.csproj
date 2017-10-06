@@ -5,6 +5,14 @@
     <UserSecretsId>aspnet-mvcdemo-A19FCF8E-B121-455B-94F4-8AB1679310AC</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\BaseController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Base\DeviceDetector.cshtml" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="51Degrees.mobi-core" Version="3.2.18.2" />
@@ -17,6 +25,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Base\" />
   </ItemGroup>
 
 </Project>

@@ -31,4 +31,22 @@
     <Folder Include="Views\Base\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\assets\.DS_Store" />
+    <None Include="wwwroot\assets\css\.DS_Store" />
+    <None Include="wwwroot\assets\css\fonts\.DS_Store" />
+    <None Include="wwwroot\assets\fonts\.DS_Store" />
+    <None Include="wwwroot\assets\fonts\Glyphicons\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets\fonts\Pe-Icon-Stroke\Pe-icon-7-stroke.svg" />
+    <None Include="wwwroot\assets\img\.DS_Store" />
+    <None Include="wwwroot\assets\img\arrow-left.cur" />
+    <None Include="wwwroot\assets\img\arrow-right.cur" />
+    <None Include="wwwroot\assets\img\faces\.DS_Store" />
+    <None Include="wwwroot\assets\js\.DS_Store" />
+    <None Include="wwwroot\assets\js\bootstrap.js" />
+    <None Include="wwwroot\assets\js\gaia.js" />
+    <None Include="wwwroot\assets\js\jquery.min.js" />
+    <None Include="wwwroot\assets\js\modernizr.js" />
+  </ItemGroup>
+
 </Project>

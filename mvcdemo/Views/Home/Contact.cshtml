@@ -1,17 +1,47 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet">
+</head>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        <div id="contact">
+            <div class="section-content">
+                <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+            </div>
+            <div class="contact-section">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 form-line">
+                            <div class="form-group">
+                                <label for="exampleInputUsername">Your name</label>
+                                <input type="text" class="form-control" id="" placeholder=" Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email Address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Mobile No.</label>
+                                <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-padding">
+                            <div class="form-group">
+                                <label for="description"> Message</label>
+                                <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
